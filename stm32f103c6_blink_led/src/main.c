@@ -56,7 +56,7 @@
 
     while (1) {
         // each toggle, call function module
-        GPIOC_ODR ^= (1 << 13);
+        LED_Toggle(500000); 
     }
 }
  
