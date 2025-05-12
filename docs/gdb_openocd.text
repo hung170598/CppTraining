@@ -1,0 +1,17 @@
+In one terminal :
+openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/target/stm32f1x.cfg
+
+
+In two terminal :
+
+
+arm-none-eabi-gdb firmware.elf
+target remote localhost:3333
+go to debug
+
+
+target remote localhost:3333
+
+
+
+// watch data in stack ( function ) : https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/#ideas-for-more-exercises

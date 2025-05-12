@@ -1,0 +1,6 @@
+[22:36:55] ls
+[22:37:03] free -h
+[22:38:17] free -h
+ Note: This is api log memory in ubuntu 20.04
+[22:42:40] hehe [ERROR]
+[22:42:50] df -f [ERROR]

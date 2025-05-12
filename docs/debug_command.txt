@@ -1,0 +1,7 @@
+https://sourceware.org/gdb/current/onlinedocs/gdb/Memory.html#Memory
+https://sourceware.org/gdb/current/onlinedocs/gdb/Expressions.html
+https://sourceware.org/gdb/current/onlinedocs/gdb/Assignment.html
+https://sourceware.org/gdb/current/onlinedocs/gdb/Command-Files.html#Command-Files
+https://sourceware.org/gdb/current/onlinedocs/gdb/Loops.html#Loops
+http://openocd.org/doc/html/
+https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/#ideas-for-more-exercises

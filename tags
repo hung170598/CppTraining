@@ -1,0 +1,242 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+--specs	docs/Makefile	/^--specs=nano.specs: dùng phiên bản nhỏ gọn của stdlib.$/;"	m
+-Map	docs/Makefile	/^-Wl,-Map=...: tạo file .map để debug địa chỉ vùng nhớ.$/;"	m
+-mcpu	docs/Makefile	/^-mcpu=cortex-m3: CPU target là Cortex-M3 (dòng STM32F1).$/;"	m
+-mfloat-abi	docs/Makefile	/^-mfloat-abi=soft: không dùng FPU (hợp lý cho STM32F1).$/;"	m
+ADC1	lib/adc.h	33;"	d
+ADC1_ADRESS	lib/adc.h	6;"	d
+ADC2	lib/adc.h	34;"	d
+ADC2_ADRESS	lib/adc.h	7;"	d
+ADC_CR1	lib/adc.h	/^    volatile uint32_t ADC_CR1;$/;"	m	struct:__anon2
+ADC_CR2	lib/adc.h	/^    volatile uint32_t ADC_CR2;$/;"	m	struct:__anon2
+ADC_DR	lib/adc.h	/^    volatile uint32_t ADC_DR;$/;"	m	struct:__anon2
+ADC_HTR	lib/adc.h	/^    volatile uint32_t ADC_HTR;$/;"	m	struct:__anon2
+ADC_JDR1	lib/adc.h	/^    volatile uint32_t ADC_JDR1;$/;"	m	struct:__anon2
+ADC_JDR2	lib/adc.h	/^    volatile uint32_t ADC_JDR2;$/;"	m	struct:__anon2
+ADC_JDR3	lib/adc.h	/^    volatile uint32_t ADC_JDR3;$/;"	m	struct:__anon2
+ADC_JDR4	lib/adc.h	/^    volatile uint32_t ADC_JDR4;$/;"	m	struct:__anon2
+ADC_JOFR1	lib/adc.h	/^    volatile uint32_t ADC_JOFR1;$/;"	m	struct:__anon2
+ADC_JOFR2	lib/adc.h	/^    volatile uint32_t ADC_JOFR2;$/;"	m	struct:__anon2
+ADC_JOFR3	lib/adc.h	/^    volatile uint32_t ADC_JOFR3;$/;"	m	struct:__anon2
+ADC_JOFR4	lib/adc.h	/^    volatile uint32_t ADC_JOFR4;$/;"	m	struct:__anon2
+ADC_JSQR	lib/adc.h	/^    volatile uint32_t ADC_JSQR;$/;"	m	struct:__anon2
+ADC_LTR	lib/adc.h	/^    volatile uint32_t ADC_LTR;$/;"	m	struct:__anon2
+ADC_SMPR1	lib/adc.h	/^    volatile uint32_t ADC_SMPR1;$/;"	m	struct:__anon2
+ADC_SMPR2	lib/adc.h	/^    volatile uint32_t ADC_SMPR2;$/;"	m	struct:__anon2
+ADC_SQR1	lib/adc.h	/^    volatile uint32_t ADC_SQR1;$/;"	m	struct:__anon2
+ADC_SQR2	lib/adc.h	/^    volatile uint32_t ADC_SQR2;$/;"	m	struct:__anon2
+ADC_SQR3	lib/adc.h	/^    volatile uint32_t ADC_SQR3;$/;"	m	struct:__anon2
+ADC_SR	lib/adc.h	/^    volatile uint32_t ADC_SR;$/;"	m	struct:__anon2
+ADC_t	lib/adc.h	/^} ADC_t;$/;"	t	typeref:struct:__anon2
+ADRESS_BASE_RCC	lib/rcc.h	4;"	d
+BRR	lib/gpio.h	/^    volatile uint32_t BRR;$/;"	m	struct:__anon3
+BSRR	lib/gpio.h	/^    volatile uint32_t BSRR;$/;"	m	struct:__anon3
+BUILD_DIR	Makefile	/^BUILD_DIR   := build$/;"	m
+BUILD_DIR	docs/Makefile	/^BUILD_DIR   := build$/;"	m
+CC	Makefile	/^CC          := arm-none-eabi-gcc$/;"	m
+CC	docs/Makefile	/^CC          := arm-none-eabi-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS      :=-ggdb -Ilib -mcpu=$(MACH) -mthumb -mfloat-abi=soft -Wall -O0 $/;"	m
+CFLAGS	docs/Makefile	/^CFLAGS := -Ilib -mcpu=$(MACH) -mthumb -mfloat-abi=soft -Wall -O0$/;"	m
+CLEAR_BIT	lib/gpio.h	11;"	d
+CLEAR_REG	lib/gpio.h	13;"	d
+CRH	lib/gpio.h	/^    uint32_t CRH;$/;"	m	struct:__anon3
+CRL	lib/gpio.h	/^    uint32_t CRL;$/;"	m	struct:__anon3
+DRV_DIR	Makefile	/^DRV_DIR     := $(SRC_DIR)\/drivers$/;"	m
+DRV_DIR	docs/Makefile	/^DRV_DIR     := $(SRC_DIR)\/drivers$/;"	m
+Default_Handle	Startup/startup.c	/^void Default_Handle(void)$/;"	f
+GPIOA	lib/gpio.h	36;"	d
+GPIOA_BASE_ADDRESSS	lib/gpio.h	19;"	d
+GPIOB	lib/gpio.h	37;"	d
+GPIOB_BASE_ADDRESSS	lib/gpio.h	20;"	d
+GPIOC	lib/gpio.h	38;"	d
+GPIOC_BASE_ADDRESSS	lib/gpio.h	21;"	d
+GPIOD	lib/gpio.h	39;"	d
+GPIOD_BASE_ADDRESSS	lib/gpio.h	22;"	d
+GPIOE	lib/gpio.h	40;"	d
+GPIOE_BASE_ADDRESSS	lib/gpio.h	23;"	d
+GPIOF	lib/gpio.h	41;"	d
+GPIOF_BASE_ADDRESSS	lib/gpio.h	24;"	d
+GPIOG	lib/gpio.h	42;"	d
+GPIOG_BASE_ADDRESSS	lib/gpio.h	25;"	d
+GPIO_Config	lib/gpio.c	/^void GPIO_Config(GPIO_Config_t *config)$/;"	f
+GPIO_Config_t	lib/gpio.h	/^} GPIO_Config_t;$/;"	t	typeref:struct:__anon7
+GPIO_INPUT_ANALOG	lib/gpio.h	/^    GPIO_INPUT_ANALOG = 0,$/;"	e	enum:__anon5
+GPIO_INPUT_FLOATING	lib/gpio.h	/^    GPIO_INPUT_FLOATING,$/;"	e	enum:__anon5
+GPIO_INPUT_PULL_UP_DOWN	lib/gpio.h	/^    GPIO_INPUT_PULL_UP_DOWN,$/;"	e	enum:__anon5
+GPIO_InputType_t	lib/gpio.h	/^} GPIO_InputType_t;$/;"	t	typeref:enum:__anon5
+GPIO_MODE_INPUT	lib/gpio.h	/^    GPIO_MODE_INPUT = 0,$/;"	e	enum:__anon4
+GPIO_MODE_OUTPUT_10MHz	lib/gpio.h	/^    GPIO_MODE_OUTPUT_10MHz = 1,$/;"	e	enum:__anon4
+GPIO_MODE_OUTPUT_2MHz	lib/gpio.h	/^    GPIO_MODE_OUTPUT_2MHz,$/;"	e	enum:__anon4
+GPIO_MODE_OUTPUT_50MHz	lib/gpio.h	/^    GPIO_MODE_OUTPUT_50MHz,$/;"	e	enum:__anon4
+GPIO_MODE_t	lib/gpio.h	/^} GPIO_MODE_t;$/;"	t	typeref:enum:__anon4
+GPIO_OUTPUT_AF_OPEN_DRAIN	lib/gpio.h	/^    GPIO_OUTPUT_AF_OPEN_DRAIN,$/;"	e	enum:__anon6
+GPIO_OUTPUT_AF_PUSH_PULL	lib/gpio.h	/^    GPIO_OUTPUT_AF_PUSH_PULL,$/;"	e	enum:__anon6
+GPIO_OUTPUT_OPEN_DRAIN	lib/gpio.h	/^    GPIO_OUTPUT_OPEN_DRAIN,$/;"	e	enum:__anon6
+GPIO_OUTPUT_PUSH_PULL	lib/gpio.h	/^    GPIO_OUTPUT_PUSH_PULL = 0,$/;"	e	enum:__anon6
+GPIO_OutputType_t	lib/gpio.h	/^} GPIO_OutputType_t;$/;"	t	typeref:enum:__anon6
+GPIO_REGISTER_t	lib/gpio.h	/^} GPIO_REGISTER_t;$/;"	t	typeref:struct:__anon3
+HISTORY_FILE	src/test/log_terminal.c	9;"	d	file:
+HISTORY_FILE	src/test/terminal_tool.c	9;"	d	file:
+IDR	lib/gpio.h	/^    volatile uint32_t IDR;$/;"	m	struct:__anon3
+LCKR	lib/gpio.h	/^    volatile uint32_t LCKR;$/;"	m	struct:__anon3
+LDFLAGS	Makefile	/^LDFLAGS     := -nostdlib -mcpu=$(MACH) -mthumb -mfloat-abi=soft --specs=nano.specs \\$/;"	m
+LDFLAGS	docs/Makefile	/^LDFLAGS := -nostdlib -mcpu=$(MACH) -mthumb -mfloat-abi=soft --specs=nano.specs \\$/;"	m
+LIB_DIR	Makefile	/^LIB_DIR     := lib$/;"	m
+LIB_DIR	docs/Makefile	/^LIB_DIR     := lib$/;"	m
+MACH	Makefile	/^MACH        := cortex-m3$/;"	m
+MACH	docs/Makefile	/^MACH        := cortex-m3$/;"	m
+MAX_CMD_LEN	src/test/log_terminal.c	10;"	d	file:
+MAX_CMD_LEN	src/test/terminal_tool.c	10;"	d	file:
+MAX_LINE_LEN	src/test/log_terminal.c	11;"	d	file:
+MAX_LINE_LEN	src/test/terminal_tool.c	11;"	d	file:
+MODIFY_REG	lib/gpio.h	16;"	d
+OBJCOPY	Makefile	/^OBJCOPY     := arm-none-eabi-objcopy$/;"	m
+OBJCOPY	docs/Makefile	/^OBJCOPY     := arm-none-eabi-objcopy$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst %.c,$(BUILD_DIR)\/%.o,$(SRC_FILES))$/;"	m
+OBJS	docs/Makefile	/^OBJS := $(patsubst %.c,$(BUILD_DIR)\/%.o,$(SRC_FILES))$/;"	m
+ODR	lib/gpio.h	/^    volatile uint32_t ODR;$/;"	m	struct:__anon3
+RCC	lib/rcc.h	38;"	d
+RCC_AHBENR	lib/rcc.h	/^    volatile uint32_t RCC_AHBENR;$/;"	m	struct:__anon1
+RCC_APB1ENR	lib/rcc.h	/^    volatile uint32_t RCC_APB1ENR;$/;"	m	struct:__anon1
+RCC_APB1RSTR	lib/rcc.h	/^    volatile uint32_t RCC_APB1RSTR;$/;"	m	struct:__anon1
+RCC_APB2ENR	lib/rcc.h	/^    volatile uint32_t RCC_APB2ENR;$/;"	m	struct:__anon1
+RCC_APB2ENR_ADC1EN	lib/rcc.h	15;"	d
+RCC_APB2ENR_ADC2EN	lib/rcc.h	14;"	d
+RCC_APB2ENR_ADC3EN	lib/rcc.h	9;"	d
+RCC_APB2ENR_AFIOEN	lib/rcc.h	23;"	d
+RCC_APB2ENR_IOPAEN	lib/rcc.h	22;"	d
+RCC_APB2ENR_IOPBEN	lib/rcc.h	21;"	d
+RCC_APB2ENR_IOPCEN	lib/rcc.h	20;"	d
+RCC_APB2ENR_IOPDEN	lib/rcc.h	19;"	d
+RCC_APB2ENR_IOPEEN	lib/rcc.h	18;"	d
+RCC_APB2ENR_IOPFEN	lib/rcc.h	17;"	d
+RCC_APB2ENR_IOPGEN	lib/rcc.h	16;"	d
+RCC_APB2ENR_SPI1EN	lib/rcc.h	12;"	d
+RCC_APB2ENR_TIM15EN	lib/rcc.h	8;"	d
+RCC_APB2ENR_TIM16EN	lib/rcc.h	7;"	d
+RCC_APB2ENR_TIM17EN	lib/rcc.h	6;"	d
+RCC_APB2ENR_TIM1EN	lib/rcc.h	13;"	d
+RCC_APB2ENR_TIM8EN	lib/rcc.h	11;"	d
+RCC_APB2ENR_USART1EN	lib/rcc.h	10;"	d
+RCC_APB2RSTR	lib/rcc.h	/^    volatile uint32_t RCC_APB2RSTR;$/;"	m	struct:__anon1
+RCC_BDCR	lib/rcc.h	/^    volatile uint32_t RCC_BDCR;$/;"	m	struct:__anon1
+RCC_CFGR	lib/rcc.h	/^    volatile uint32_t RCC_CFGR;$/;"	m	struct:__anon1
+RCC_CIR	lib/rcc.h	/^    volatile uint32_t RCC_CIR;$/;"	m	struct:__anon1
+RCC_CR	lib/rcc.h	/^    volatile uint32_t RCC_CR;$/;"	m	struct:__anon1
+RCC_CSR	lib/rcc.h	/^    volatile uint32_t RCC_CSR;$/;"	m	struct:__anon1
+RCC_REGISTER_t	lib/rcc.h	/^} RCC_REGISTER_t;$/;"	t	typeref:struct:__anon1
+READ_BIT	lib/gpio.h	12;"	d
+READ_REG	lib/gpio.h	15;"	d
+Reset_Handler	Startup/startup.c	/^void Reset_Handler(void)$/;"	f
+SET_BIT	lib/gpio.h	10;"	d
+SIZE	Makefile	/^SIZE        := arm-none-eabi-size$/;"	m
+SRAM_END	Startup/startup.c	5;"	d	file:
+SRAM_SIZE	Startup/startup.c	4;"	d	file:
+SRAM_START	Startup/startup.c	3;"	d	file:
+SRC_DIR	Makefile	/^SRC_DIR     := src$/;"	m
+SRC_DIR	docs/Makefile	/^SRC_DIR     := src$/;"	m
+SRC_FILES	Makefile	/^SRC_FILES := \\$/;"	m
+SRC_FILES	docs/Makefile	/^SRC_FILES := \\$/;"	m
+STACK_START	Startup/startup.c	6;"	d	file:
+STARTUP_DIR	Makefile	/^STARTUP_DIR := Startup$/;"	m
+STARTUP_DIR	docs/Makefile	/^STARTUP_DIR := Startup$/;"	m
+TARGET_BIN	Makefile	/^TARGET_BIN  := $(BUILD_DIR)\/firmware.bin$/;"	m
+TARGET_BIN	docs/Makefile	/^TARGET_BIN := build\/firmware.bin$/;"	m
+TARGET_ELF	Makefile	/^TARGET_ELF  := $(BUILD_DIR)\/firmware.elf$/;"	m
+TARGET_ELF	docs/Makefile	/^TARGET_ELF := build\/firmware.elf$/;"	m
+UART_DATA_8_BITS	lib/uart.h	/^    UART_DATA_8_BITS, \/*!< word length: 8bits*\/$/;"	e	enum:__anon10
+UART_DATA_9_BITS	lib/uart.h	/^    UART_DATA_9_BITS, \/*!< word length: 9bits*\/$/;"	e	enum:__anon10
+UART_PARITY_DISABLE	lib/uart.h	/^    UART_PARITY_DISABLE = 0x0, \/*!< Disable UART parity*\/$/;"	e	enum:__anon12
+UART_PARITY_EVEN	lib/uart.h	/^    UART_PARITY_EVEN = 0x2, \/*!< Enable UART even parity*\/$/;"	e	enum:__anon12
+UART_PARITY_ODD	lib/uart.h	/^    UART_PARITY_ODD = 0x3 \/*!< Enable UART odd parity*\/$/;"	e	enum:__anon12
+UART_STOP_BITS_0_5	lib/uart.h	/^    UART_STOP_BITS_0_5, \/*!< stop bit: 0.5bits*\/$/;"	e	enum:__anon11
+UART_STOP_BITS_1	lib/uart.h	/^    UART_STOP_BITS_1, \/*!< stop bit: 1bit*\/$/;"	e	enum:__anon11
+UART_STOP_BITS_1_5	lib/uart.h	/^    UART_STOP_BITS_1_5, \/*!< stop bit: 1.5 bits*\/$/;"	e	enum:__anon11
+UART_STOP_BITS_2	lib/uart.h	/^    UART_STOP_BITS_2, \/*!< stop bit: 2bits*\/$/;"	e	enum:__anon11
+USART1	lib/uart.h	20;"	d
+USART1_ADDRESS	lib/uart.h	5;"	d
+USART2	lib/uart.h	21;"	d
+USART2_ADDRESS	lib/uart.h	6;"	d
+USART3	lib/uart.h	22;"	d
+USART3_ADDRESS	lib/uart.h	7;"	d
+USART_BR	lib/uart.h	/^    volatile uint32_t USART_BR;$/;"	m	struct:__anon9
+USART_CR1	lib/uart.h	/^    volatile uint32_t USART_CR1;$/;"	m	struct:__anon9
+USART_CR2	lib/uart.h	/^    volatile uint32_t USART_CR2;$/;"	m	struct:__anon9
+USART_CR3	lib/uart.h	/^    volatile uint32_t USART_CR3;$/;"	m	struct:__anon9
+USART_DR	lib/uart.h	/^    volatile uint32_t USART_DR;$/;"	m	struct:__anon9
+USART_GTPR	lib/uart.h	/^    volatile uint32_t USART_GTPR;$/;"	m	struct:__anon9
+USART_SR	lib/uart.h	/^    volatile uint32_t USART_SR;$/;"	m	struct:__anon9
+USART_t	lib/uart.h	/^} USART_t;$/;"	t	typeref:struct:__anon9
+WRITE_REG	lib/gpio.h	14;"	d
+_ADC_H_	lib/adc.h	2;"	d
+_GPIO_H_	lib/gpio.h	6;"	d
+_LOG_INFO_H_	src/drivers/log_info.h	2;"	d
+_RCC_H_	lib/rcc.h	2;"	d
+_TEMP_H_	src/drivers/temp.h	3;"	d
+_UART_H_	lib/uart.h	2;"	d
+__env	lib/syscall.c	/^char *__env[1] = { 0 };$/;"	v
+_close	lib/syscall.c	/^int _close(int file)$/;"	f
+_execve	lib/syscall.c	/^int _execve(char *name, char **argv, char **env)$/;"	f
+_exit	lib/syscall.c	/^void _exit (int status)$/;"	f
+_fork	lib/syscall.c	/^int _fork(void)$/;"	f
+_fstat	lib/syscall.c	/^int _fstat(int file, struct stat *st)$/;"	f
+_getpid	lib/syscall.c	/^int _getpid(void)$/;"	f
+_isatty	lib/syscall.c	/^int _isatty(int file)$/;"	f
+_kill	lib/syscall.c	/^int _kill(int pid, int sig)$/;"	f
+_link	lib/syscall.c	/^int _link(char *old, char *new)$/;"	f
+_lseek	lib/syscall.c	/^int _lseek(int file, int ptr, int dir)$/;"	f
+_open	lib/syscall.c	/^int _open(char *path, int flags, ...)$/;"	f
+_read	lib/syscall.c	/^__attribute__((weak)) int _read(int file, char *ptr, int len)$/;"	f
+_sbrk	lib/syscall.c	/^caddr_t _sbrk(int incr)$/;"	f
+_stat	lib/syscall.c	/^int _stat(char *file, struct stat *st)$/;"	f
+_times	lib/syscall.c	/^int _times(struct tms *buf)$/;"	f
+_unlink	lib/syscall.c	/^int _unlink(char *name)$/;"	f
+_wait	lib/syscall.c	/^int _wait(int *status)$/;"	f
+_write	lib/syscall.c	/^__attribute__((weak)) int _write(int file, char *ptr, int len)$/;"	f
+baud_rate	lib/uart.h	/^    int baud_rate; \/*!< UART baud rate*\/$/;"	m	struct:__anon13
+config_mode	src/drivers/temp.c	/^void config_mode(void)$/;"	f
+data_bits	lib/uart.h	/^    uart_word_length_t data_bits; \/*!< UART byte size*\/$/;"	m	struct:__anon13
+enable_clock	lib/rcc.c	/^void enable_clock()$/;"	f
+enabled_sensor	src/drivers/temp.c	/^void enabled_sensor(uint8_t bit_index) { ADC1->ADC_CR2 |= 1U << 23; }$/;"	f
+environ	lib/syscall.c	/^char **environ = __env;$/;"	v
+get_time	src/test/terminal_tool.c	/^void get_time(char *buffer, size_t size)$/;"	f
+gpio_get_level	lib/gpio.c	/^bool gpio_get_level(GPIO_Config_t *config)$/;"	f
+gpio_set_level	lib/gpio.c	/^void gpio_set_level(GPIO_Config_t *config, bool level)$/;"	f
+gpio_toggle_level	lib/gpio.c	/^void gpio_toggle_level(GPIO_Config_t *config) { config->port->ODR ^= (config->pin); }$/;"	f
+init_adc	lib/adc.c	/^void init_adc(void)$/;"	f
+initialise_monitor_handles	lib/syscall.c	/^void initialise_monitor_handles()$/;"	f
+inputType	lib/gpio.h	/^        GPIO_InputType_t inputType;$/;"	m	union:__anon7::__anon8
+log_info	src/drivers/log_info.c	/^void log_info(int data)$/;"	f
+main	src/main.c	/^int main(void)$/;"	f
+main	src/test/log_terminal.c	/^int main()$/;"	f
+main	src/test/terminal_tool.c	/^int main()$/;"	f
+mode	lib/gpio.h	/^    GPIO_MODE_t mode;$/;"	m	struct:__anon7
+obtain_temperature	src/drivers/temp.c	/^void obtain_temperature(uint32_t value)$/;"	f
+outputType	lib/gpio.h	/^        GPIO_OutputType_t outputType;$/;"	m	union:__anon7::__anon8
+parity	lib/uart.h	/^    uart_parity_t parity; \/*!< UART parity mode*\/$/;"	m	struct:__anon13
+pin	lib/gpio.h	/^    uint16_t pin;$/;"	m	struct:__anon7
+port	lib/gpio.h	/^    GPIO_REGISTER_t *port;$/;"	m	struct:__anon7
+select_input_chanel	src/drivers/temp.c	/^void select_input_chanel(void)$/;"	f
+select_sample_time	src/drivers/temp.c	/^void select_sample_time(void)$/;"	f
+show_stats	src/test/log_terminal.c	/^void show_stats()$/;"	f
+show_stats	src/test/terminal_tool.c	/^void show_stats()$/;"	f
+start_adc	lib/adc.c	/^void start_adc(void)$/;"	f
+start_conversion	src/drivers/temp.c	/^void start_conversion(void)$/;"	f
+stop_bits	lib/uart.h	/^    uart_stop_bits_t stop_bits; \/*!< UART stop bits*\/$/;"	m	struct:__anon13
+uart_config	lib/uart.h	/^typedef uart_config_t *uart_config;$/;"	t
+uart_config_t	lib/uart.h	/^} uart_config_t;$/;"	t	typeref:struct:__anon13
+uart_init_driver	lib/uart.c	/^void uart_init_driver(uart_config uart)$/;"	f
+uart_num	lib/uart.h	/^    USART_t *uart_num;$/;"	m	struct:__anon13
+uart_parity_t	lib/uart.h	/^} uart_parity_t;$/;"	t	typeref:enum:__anon12
+uart_set_pin	lib/uart.c	/^void uart_set_pin(int8_t tx_pin, int8_t rx_pin)$/;"	f
+uart_stop_bits_t	lib/uart.h	/^} uart_stop_bits_t;$/;"	t	typeref:enum:__anon11
+uart_word_length_t	lib/uart.h	/^} uart_word_length_t;$/;"	t	typeref:enum:__anon10
+uart_write_byte	lib/uart.c	/^void uart_write_byte(uart_config uart, char byte)$/;"	f
+uart_write_data	lib/uart.c	/^void uart_write_data(uart_config uart, char *buf, int len)$/;"	f
+vectors	Startup/startup.c	/^uint32_t vectors[] __attribute__((section(".isr_vector"))) = { $/;"	v
+write_history	src/test/terminal_tool.c	/^void write_history(const char *cmd, const char *note, int is_error)$/;"	f
