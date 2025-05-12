@@ -7,7 +7,6 @@
 #include "adc.h"
 #include "drivers/log_info.h"
 #include "drivers/temp.h"
-int *p = NULL;
 int main(void)
 {
     config_mode();
@@ -32,15 +31,16 @@ int main(void)
     GPIO_Config(&blink);
     while (1)
     {
+        uart_write_data(&uart, "Hello World !!!", 16);
 
         start_conversion();
         uint32_t value = ADC1->ADC_DR;
         obtain_temperature(value);
-        GPIOC->ODR &= ~(1U << 13);
+
+        gpio_set_level(&blink, false);
         for (int i = 0; i < 1000000; i++)
             ;
         gpio_set_level(&blink, true);
-        // uart_write_data(&uart, "Hello World !!!", 16);
         for (int i = 0; i < 1000000; i++)
             ;
     }
