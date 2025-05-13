@@ -1,45 +1,76 @@
-# Toolchain
-CC = arm-none-eabi-gcc
-OBJCOPY = arm-none-eabi-objcopy
-CFLAGS = -mcpu=cortex-m3 -mthumb -O2 -Wall -ffunction-sections -fdata-sections -I$(INC_DIR)
-LDFLAGS = -T ldscript/STM32F103C6_FLASH.ld -Wl,--gc-sections
+GNU_DIR := C:/GNU_Toolchain/GCC_NEW
+GCC_ARM_DIR = $(GNU_DIR)/bin/arm-none-eabi-gcc
+OBJ_CPY_DIR = $(GNU_DIR)/arm-none-eabi/bin/objcopy
 
-# Directories
-SRC_DIR = src
-INC_DIR = inc
-BUILD_DIR = build
+LD_FILE := STM32F103C8TX_FLASH.ld
+STLINK_ULTILITY = Tools/STLINK_Utility/ST-LINK_CLI
 
-# Sources and objects
-SRCS = $(wildcard $(SRC_DIR)/*.c)
-OBJS = $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SRCS))
+CPU = cortex-m3 
+#module
 
-# Output
-TARGET = $(BUILD_DIR)/blink
+#include directory
+INC_DIRS += Core/Inc \
+			Peripherals/Inc
 
-all: setup $(TARGET).bin
+INC_FILES += $(foreach INC_DIRS, $(INC_DIRS), $(wildcard $(INC_DIRS)/*.h))	
 
-setup:
-	if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+#soure directory
+SRC_DIRS += Core/Src \
+			Peripherals/Src \
 
-$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
-	$(CC) $(CFLAGS) -I$(INC_DIR) -c $< -o $@
+ASM_DIRS += Startup
+			
+SRC_FILES += $(foreach SRC_DIRS, $(SRC_DIRS), $(wildcard $(SRC_DIRS)/*.c))
+ASM_FILES += $(foreach ASM_DIRS, $(ASM_DIRS), $(wildcard $(ASM_DIRS)/*.s))
 
-$(TARGET).elf: $(OBJS) startup/startup_stm32f103c6.o
-	$(CC) $(CFLAGS) $^ -o $(TARGET).elf $(LDFLAGS)
+#output directory
+OUT_DIR = ./Debug
 
-$(TARGET).bin: $(TARGET).elf
-	$(OBJCOPY) -O binary $< $@
+#get all .o files
+SRC_FILENAMES += $(notdir $(SRC_FILES))
+ASM_FILENAMES += $(notdir $(ASM_FILES))
+OBJ_FILENAMES += $(subst .c,.o,$(SRC_FILENAMES))
+OBJ_FILENAMES += $(subst .s,.o,$(ASM_FILENAMES))
+OBJ_FILES += $(foreach OBJ_FILENAMES, $(OBJ_FILENAMES), $(OUT_DIR)/$(OBJ_FILENAMES))
 
-$(TARGET).hex: $(TARGET).elf
-	$(OBJCOPY) -O ihex $< $@
 
-all: setup $(TARGET).bin $(TARGET).hex
+#options and flags
+INC_OPTIONS = $(foreach INC_DIRS, $(INC_DIRS), -I$(INC_DIRS))
 
-# Startup file
-startup/startup_stm32f103c6.o: startup/startup_stm32f103c6.s
-	$(CC) $(CFLAGS) -c $< -o $@
+CCFLAGS = -c -mcpu=$(CPU) -mthumb  -std=gnu11 -O0 $(INC_OPTIONS)
+ASFLAGS = -c -mcpu=$(CPU) -mthumb $(INC_OPTIONS) #build assembly
+LDFLAGS = -T $(LD_FILE) -Wl,-Map=$(OUT_DIR)/$(MODULE).map -nostdlib
 
+#search for all .c file in SRC_DIRS
+vpath %.c $(SRC_DIRS)
+vpath %.s $(ASM_DIRS)
+
+build:$(OUT_DIR)/$(MODULE).hex
+	@echo "Build success!"
+
+#generalize makefile
+%.o:%.c
+	@$(GCC_ARM_DIR) $(CCFLAGS) $^ -o $(OUT_DIR)/$@ 
+
+#generalize makefile for .s files
+%.o: %.s
+	@$(GCC_ARM_DIR) $(ASFLAGS) $^ -o $(OUT_DIR)/$@
+
+#prerequisites must be .o files name only to use for %.o:%.c
+$(OUT_DIR)/$(MODULE).elf:$(OBJ_FILENAMES)
+	@$(GCC_ARM_DIR) $(LDFLAGS) $(OBJ_FILES) -o $@
+	
+$(OUT_DIR)/$(MODULE).hex:$(OUT_DIR)/$(MODULE).elf
+	@$(OBJ_CPY_DIR) -O ihex  $^ $@
+	
+run:
+	@$(STLINK_ULTILITY) -ME
+	@$(STLINK_ULTILITY) -p $(OUT_DIR)/$(MODULE).hex 0x08000000
+	@$(STLINK_ULTILITY) -rst
+	
 clean:
-	if exist $(BUILD_DIR) rmdir /s /q $(BUILD_DIR)
-# st-flash write $(TARGET).bin 0x08000000
-.PHONY: all clean setup
+	@rm $(OUT_DIR)/*
+	@echo "Output files cleaned!"
+
+print-%:
+	@echo $($(subst print-,,$@))
