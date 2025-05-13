@@ -26,6 +26,7 @@ void MPU_Init(MPU_Config_t* config) {
 
     // kich hoat memManage handler
     if (config->EnableMemManage) {
+	SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
         NVIC_EnableIRQ(MemoryManagement_IRQn);
     }
 
