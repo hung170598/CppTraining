@@ -1,0 +1,10 @@
+../Core/Src/main.c:24:6:initprogress	1
+../Core/Src/main.c:29:6:statemachine	8
+../Core/Src/main.c:60:6:GPIO_init	1
+../Core/Src/main.c:82:6:button_init	1
+../Core/Src/main.c:93:6:twinkled	3
+../Core/Src/main.c:116:6:blink_led	1
+../Core/Src/main.c:130:6:pwm	1
+../Core/Src/main.c:147:6:led_off	1
+../Core/Src/main.c:154:7:delay	2
+../Core/Src/main.c:164:6:main	2

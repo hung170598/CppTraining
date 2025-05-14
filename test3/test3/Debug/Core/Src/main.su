@@ -1,0 +1,10 @@
+../Core/Src/main.c:24:6:initprogress	16	static
+../Core/Src/main.c:29:6:statemachine	16	static
+../Core/Src/main.c:60:6:GPIO_init	4	static
+../Core/Src/main.c:82:6:button_init	4	static
+../Core/Src/main.c:93:6:twinkled	16	static
+../Core/Src/main.c:116:6:blink_led	8	static
+../Core/Src/main.c:130:6:pwm	24	static
+../Core/Src/main.c:147:6:led_off	4	static
+../Core/Src/main.c:154:7:delay	24	static,ignoring_inline_asm
+../Core/Src/main.c:164:6:main	16	static
