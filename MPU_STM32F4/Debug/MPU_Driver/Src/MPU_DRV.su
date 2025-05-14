@@ -1,0 +1,4 @@
+../MPU_Driver/Src/MPU_DRV.c:12:6:MPU_Init	32	static,ignoring_inline_asm
+../MPU_Driver/Src/MPU_DRV.c:52:6:MPU_DeInit	16	static,ignoring_inline_asm
+../MPU_Driver/Src/MPU_DRV.c:67:6:MPU_SetRegionConfig	16	static,ignoring_inline_asm
+../MPU_Driver/Src/MPU_DRV.c:84:6:MPU_GetErrorDetails	16	static
